@@ -47,6 +47,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<finalName>DevOps-MS</finalName>
 	</build>
 
 	<repositories>
