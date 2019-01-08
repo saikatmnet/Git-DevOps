@@ -12,7 +12,7 @@ public class DevOpsController {
 
     @RequestMapping(value = "/test", method = RequestMethod.GET)	
     public ResponseEntity<String> getAllBookings() {
-    	return new ResponseEntity<>("Hello World", HttpStatus.OK);
+    	return new ResponseEntity<>("DevOps Project", HttpStatus.OK);
     }    
 
 }
