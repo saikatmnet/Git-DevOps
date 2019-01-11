@@ -22,7 +22,7 @@ node{
    }
 
    stage('Run Container on Dev Server'){
-     def dockerRun = 'docker run -p 8080:8085 -d --name my-devops-microservice saikatmnet/devops-microservice:1.0.0'
+     def dockerRun = 'docker run -p 8085:8085 -d --name my-devops-microservice saikatmnet/devops-microservice:1.0.0'
 	sshagent(['dev-server']) {
      sh "ssh -o StrictHostKeyChecking=no ec2-user@18.216.173.209 ${dockerRun}"
 	}
